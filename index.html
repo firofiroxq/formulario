@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> FORMS PARA VAGA DE EMPREGO</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="off">
+        <p>
+            <label for="ifoto">Foto de sua preferência:</label><br>
+            <input type="file" name="foto" id="ifoto" accept="image/*">
+        </p>
+        <p>
+            <label for="inome">Nome:</label><br>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label><br>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <label for="idata">Data de Nascimento:</label><br>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="itelefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="itelefone">
+        </p>
+        <p>
+            <label for="imotivo">Por que quer entrar na nossa empresa?</label><br>
+            <textarea name="motivo" id="imotivo" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <label for="icurriculo">Insira seu curriculo:</label><br>
+            <input type="file" name="curriculo" id="icurriculo" accept=".pdf,.doc,.docx">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
